@@ -95,7 +95,7 @@ Rules encoded in the agent's instruction file. Each one exists because something
 - **Never run destructive operations on sole copies.** If no verified backup exists, refuse and flag it.
 - **Checkpoint before context fills.** Save state to a file before the context window compacts, so nothing is lost.
 
-See [docs/guardrails.md](docs/guardrails.md) for the full list with incident context.
+See [PROTOCOL.md](PROTOCOL.md) for the full list with incident context.
 
 ### 5. MCP Servers
 
@@ -123,17 +123,16 @@ Shell commands that fire on agent events:
 
 This system is general-purpose. Current workstreams:
 
-- **Open source contributions**: Code review, pull requests, discussion answers across 17 repos
+- **Open source contributions**: Code review, pull requests, discussion answers
 - **Blog/content pipeline**: Draft, edit, TTS narration, OG images, deploy
-- **Infrastructure ops**: EC2 management, DNS, deploy pipelines, health monitoring
+- **Infrastructure ops**: Server management, DNS, deploy pipelines, health monitoring
 - **Project development**: Full-stack web apps (React, Vite, Three.js, Astro, FastAPI)
 - **Research**: Web research, competitive analysis, documentation review
-- **Contact/network management**: CRM-style tracking via memory files
 - **Client work**: Analysis, dashboards, reporting (with strict data classification rules)
 
 ## What Goes Wrong
 
-This system has produced [12 documented failure modes](https://github.com/vectara/awesome-agent-failures). The highlights:
+This system has produced 12 documented failure modes. The highlights:
 
 1. **Agent deployed client financial data to a public URL.** No concept of data classification.
 2. **Agent confidently reported files as deleted when they existed.** Hallucination under search failure.
