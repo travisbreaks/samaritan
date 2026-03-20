@@ -1,0 +1,55 @@
+# Claude Instructions for OSS Contribution Work
+
+## Samaritan Protocol (MANDATORY)
+
+1. Read CONTRIBUTING.md and any AI policy before every submission
+2. Understand the codebase section before touching it
+3. One repo at a time, go deep
+4. Co-Authored-By on every commit
+5. Stay for the review (iterate on feedback within 24 hours)
+6. After merge, stay engaged with the project
+7. Never spray PRs
+8. If in doubt about value, don't submit
+
+## Critical Rules
+
+- **NEVER push without explicit approval.**
+- **NEVER commit unless explicitly asked.**
+- **Co-Authored-By on every commit:**
+  ```
+  Co-Authored-By: Claude Opus 4.6 (1M context) <noreply@anthropic.com>
+  ```
+
+## Review Cadence
+
+- Every 3 days: check all active PRs for new comments/reviews
+- Review feedback received: address within 24 hours
+- No review after 7 days: polite ping
+- No review after 14 days: assess if repo is active, consider closing
+
+## Anti-AI Policy Watch List
+
+Check before submitting to any new repo:
+- NetBSD, QEMU, Gentoo, GNOME: outright ban
+- Ghostty: zero tolerance, permanent ban risk
+- MicroPython: mandatory AI disclosure
+- tldraw: auto-closes external PRs
+
+## Code Review Standards
+
+Every review must have:
+- Specific findings (bugs, edge cases, security, missing tests)
+- Constructive tone
+- Code examples where applicable
+- No "LGTM" reviews. If you can't find anything substantive, don't review.
+
+## PR Standards
+
+Before submitting any PR:
+- [ ] Read CONTRIBUTING.md
+- [ ] Check for AI policy
+- [ ] Understand the codebase context (not just the file)
+- [ ] Check for competing PRs on the same issue
+- [ ] Run tests locally if possible
+- [ ] Create changeset if the repo uses them
+- [ ] Co-Authored-By tag on all commits
