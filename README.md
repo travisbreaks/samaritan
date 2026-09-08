@@ -10,7 +10,7 @@ If you are building with [Claude Code](https://claude.ai/claude-code) and want t
 Eight operating principles for working with AI agents responsibly. Each one exists because something broke without it.
 
 ### [docs/mobile-access.md](docs/mobile-access.md)
-How to control your agents from your phone. Blink Shell + mosh + Tailscale + tmux. Survives sleep, wifi/cell switching, spotty signal. Full setup guide for Mac and Linux.
+How to control your agents from your phone with a self-hosted stack: Blink Shell + mosh + Tailscale + tmux. Survives sleep, wifi/cell switching, spotty signal. Full setup guide for Mac and Linux. Kept as an optional reference: the author's own machine has since moved to Claude Code's built-in Remote Control, which needs none of it.
 
 ### [docs/galaxy-brain.md](docs/galaxy-brain.md)
 How to write discussion answers that actually get marked on GitHub. Repo selection, question targeting, answer structure.
