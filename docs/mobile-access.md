@@ -2,6 +2,8 @@
 
 Full CLI access to your development machine from your phone. Survives sleep, wifi-to-cell handoffs, spotty signal, and airplane mode.
 
+> Status (September 2026): this is the self-hosted path and it still works. The author's own setup has moved to Claude Code's built-in Remote Control, which pairs a phone to a running session without a VPN, mosh, or tmux. Use this guide when you want a general-purpose terminal on the machine, not only the agent.
+
 ## The Stack
 
 ```
@@ -166,4 +168,4 @@ Same concept, different app. Use [JuiceSSH](https://play.google.com/store/apps/d
 - No ports are opened on your router
 - SSH keys only, no password auth
 - mosh uses UDP on ports 60000-61000; Tailscale handles this transparently
-- Your dev machine is not exposed to the public internet at any point
+- With SSH bound to the Tailscale interface and no router port forwarding, the machine is reachable only from devices on your tailnet; this guide does not audit the rest of the machine's listening services, so check `lsof -iTCP -sTCP:LISTEN` yourself
